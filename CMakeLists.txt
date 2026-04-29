@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.13)
+project(Forest)
+find_package(SFML COMPONENTS window graphics REQUIRED)
+file(GLOB ALL_SOURCES "*.cpp")
+add_executable(Forest ${ALL_SOURCES})
+target_link_libraries(Forest PRIVATE sfml-window sfml-graphics)
